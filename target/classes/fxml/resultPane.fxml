@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="resultPaneHBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="600.0" spacing="30.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.advancedcalculator.controller.ResultPaneController">
+   <children>
+      <VBox fx:id="resultsVBox" prefHeight="200.0" prefWidth="353.0" spacing="30.0" styleClass="vBox" HBox.hgrow="ALWAYS">
+         <children>
+            <Label fx:id="lastResultLabel" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="0" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="actualResultTextField" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="0" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label fx:id="operationLabel" maxHeight="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+         </children>
+         <HBox.margin>
+            <Insets left="30.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox id="numberSystems" fx:id="numberSystemVBox" prefHeight="200.0" prefWidth="100.0" styleClass="vBox" HBox.hgrow="ALWAYS">
+         <children>
+            <RadioButton fx:id="binaryRadioButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Binary" VBox.vgrow="ALWAYS" />
+            <RadioButton fx:id="decimalRadioButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Decimal" VBox.vgrow="ALWAYS" />
+            <RadioButton fx:id="hexRadioButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Hex" VBox.vgrow="ALWAYS" />
+         </children>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </VBox>
+      <VBox fx:id="resetVBox" prefHeight="200.0" prefWidth="122.0" spacing="70.0" styleClass="vBox">
+         <children>
+            <Button id="smaller-button" fx:id="resetButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Reset" VBox.vgrow="ALWAYS" />
+            <Button id="smaller-button" fx:id="deleteButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Delete digit" VBox.vgrow="ALWAYS" />
+         </children>
+         <HBox.margin>
+            <Insets right="30.0" />
+         </HBox.margin>
+      </VBox>
+   </children>
+</HBox>
