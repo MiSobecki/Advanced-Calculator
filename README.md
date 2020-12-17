@@ -16,4 +16,4 @@ No problem to add easily more number systems and operations.
 
 Application was developed in Java, using Maven, JavaFx and CSS.
 
-![alt text](https://ibb.co/2WtJR2y/Calculator.png)
+![alt text](https://i.ibb.co/xXjZwvD/Calculator-2.png)
